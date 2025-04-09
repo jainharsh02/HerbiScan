@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/upload.js"></script>
+  </head>
+
+  <body>
+    <!-- header contains logo and nav links -->
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="upper-header">
+            <a class="logo" herf="#">
+              <img src="./images/HerbiScanW.png" alt="logo" />
+            </a>
+          </div>
+          <div class="lower-header">
+            <a id="home" href="#home-section">Home Page</a>
+            <a id="aboutUs" href="#about-us-section">About Us</a>
+            <a id="imageUploadsLink" href="#imageUpload-section"
+              >Image Upload</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main content goes here -->
+    <main>
+      <!-- landing section starts here -->
+      <section id="home-section" class="landing-page">
+        <div class="container full-height">
+          <div class="landing-page-wrapper">
+            <div class="landing-division-1">
+              <div class="landing-divisions-wrapper">
+                <div class="landing-division-2"></div>
+                <div class="landing-content">
+                  <h1>Snap, Scan & Identify <br />Your Plant Fast!</h1>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <img src="./images/landing-flower.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- landing section ends here -->
+
+      <!-- about us section starts here -->
+      <section class="about-us" id="about-us-section">
+        <div class="container">
+          <div class="about-us-wrapper">
+            <h2 class="line">About Us</h2>
+            <p class="about-text">
+              <span class="headline">HerbiScan</span> bridges the gap between
+              ancient herbal wisdom and modern technology. Our platform uses
+              <span class="accent">AI-powered image recognition</span> and
+              <span class="accent">machine learning</span> to accurately
+              identify medicinal plants and raw materials — helping ensure
+              authenticity and quality in every leaf. <br /><br />
+              Rooted in the tradition of
+              <span class="highlight">Ayurveda</span>, we empower users with a
+              tool that's <span class="highlight">intuitive</span>,
+              <span class="highlight">fast</span>, and
+              <span class="highlight">reliable</span>. Whether you're a
+              practitioner, collector, or enthusiast, HerbiScan simplifies plant
+              identification with just a click. <br /><br />
+              Join us in creating a healthier, transparent future where
+              <span class="focus">technology preserves nature</span> and herbal
+              medicine thrives.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- about us section ends here -->
+
+      <!-- form section starts here -->
+      <section class="form-area" id="imageUpload-section">
+        <div class="container">
+          <div class="form-area-wrapper">
+            <h2 class="line-sec">Upload your Herb</h2>
+            <div class="upload-container">
+              <form id="uploadForm">
+                <label class="upload-box" for="imageUpload">
+                  <span>Click or Drag & Drop to upload an image</span>
+                  <input type="file" id="imageUpload" accept="image/*" />
+                </label>
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+              <div class="preview" id="imagePreview"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- form section ends here -->
+
+      <!-- Our team -->
+      <section class="our-team">
+        <div class="container">
+          <div class="our-team-wrapper">
+            <h2 class="line">Our Team</h2>
+
+            <div class="team-members">
+              <div class="indi-member">
+                <img src="./images/harsh.jpg" alt="member" />
+                <div class="cover-box">
+                  <h3>Harsh Jain</h3>
+                  <p>
+                    Harsh played a pivotal role in crafting the backbone of
+                    HerbiScan. From setting up the backend environment to
+                    developing secure REST APIs and integrating model responses,
+                    his work ensures that every user interaction with the system
+                    is smooth, reliable, and secure.
+                  </p>
+                </div>
+              </div>
+              <div class="indi-member">
+                <img src="./images/hardik.jpg" alt="member" />
+                <div class="cover-box">
+                  <h3>Hardik Jain</h3>
+                  <p>
+                    Hardik led the charge on data preprocessing and model
+                    training. From sourcing the best datasets to experimenting
+                    with advanced machine learning techniques, his expertise
+                    helped lay the foundation for our accurate and efficient
+                    plant identification system.
+                  </p>
+                </div>
+              </div>
+              <div class="indi-member">
+                <img src="./images/gazal.jpg" alt="member" />
+                <div class="cover-box">
+                  <h3>Gazal Jain</h3>
+                  <p>
+                    Gazal specialized in image processing and model
+                    optimization. She implemented cutting-edge feature
+                    extraction and segmentation techniques, elevating model
+                    precision and performance—ensuring HerbiScan remains both
+                    intelligent and dependable.
+                  </p>
+                </div>
+              </div>
+              <div class="indi-member">
+                <img src="./images/jatin.jpg" alt="member" />
+                <div class="cover-box">
+                  <h3>Jatin Sinwaria</h3>
+                  <p>
+                    Jatin brought HerbiScan to life through a seamless and
+                    aesthetic user interface. He developed the entire frontend
+                    and crafted an intuitive experience that bridges technology
+                    with tradition—making complex ML processes feel effortless
+                    to end users.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
