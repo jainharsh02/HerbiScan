@@ -12,7 +12,7 @@ $(document).ready(function () {
       formData.append('file', fileInput.files[0]);
   
       $.ajax({
-        url: 'http://127.0.0.1:8000/predict', // Update this to your backend URL if hosted
+        url: 'https://herbiscan.onrender.com/predict', // Update this to your backend URL if hosted
         type: 'POST',
         data: formData,
         processData: false,
