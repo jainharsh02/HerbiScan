@@ -40,7 +40,7 @@ $(document).ready(function () {
               </span>
             </h3>
             <h3>
-              Soli Type<br />
+              Soil Type<br />
               <span class="small"> ${response.soil} </span>
             </h3>
             <h3>
