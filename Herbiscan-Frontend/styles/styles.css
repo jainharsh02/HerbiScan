@@ -162,6 +162,7 @@ header {
   bottom: 0;
   left: 0;
   transform: translateX(50%);
+  box-shadow: 0px 0px 15px 15px white;
 }
 
 .landing-content {
@@ -185,7 +186,8 @@ header {
 }
 
 .landing-content p {
-  font-size: 42px;
+  text-wrap: nowrap;
+  font-size: 34px;
   font-family: "Italiana", sans-serif;
   font-weight: 700;
   color: black;
@@ -556,4 +558,131 @@ input[type="file"] {
   background-size: 100% 100%, 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* .results {
+  background-color: var(--secondary-color);
+}
+
+.results-wrapper {
+  padding: 0 0 var(--section-top-down-padding) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.results-wrapper h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#img-result {
+  width: 100%;
+} */
+
+.results {
+  background-color: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.results::before {
+  content: "";
+  position: absolute;
+  /* top: -20%;
+   */
+  bottom: 10;
+  left: 10%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 40%,
+    transparent 10%
+  );
+  z-index: 0;
+  animation: pulseGlow 10s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.8;
+  }
+}
+
+.results-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  animation: fadeInUp 1s ease-out both;
+  padding-bottom: var(--section-top-down-padding);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-wrapper h2.line-sec {
+  color: #fff;
+  font-size: 48px;
+  position: relative;
+  font-family: "Italiana", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.results-wrapper h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.results-wrapper .small {
+  font-size: 20px;
+  font-weight: 400;
+  color: #eeeeee;
+  background-color: rgba(181, 192, 162, 0.1);
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 6px;
+  max-width: 600px;
+}
+
+#img-result {
+  width: 100%;
 }
